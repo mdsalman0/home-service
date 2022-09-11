@@ -2,10 +2,12 @@ import React from 'react';
 import './Home.css';
 import g4 from '../image/g4768.png';
 import image3 from '../image/image 3.svg';
-import StockSna from '../image/StockSnap_ABEBWKIUKG 1.png'
+import StockSna from '../image/StockSnap_ABEBWKIUKG 1.png';
+import image from '../image/image 4.png'
 const Home = () => {
     return (
-        <div>
+        <>
+        {/* Home Service Section */}
         <section className='section-neu'>
             <div className='nav-bar'>
                 <div className='logo'>
@@ -35,7 +37,28 @@ const Home = () => {
                 <button className="input-button text-white" type="button" id="button-addon2">Get Estimate</button>
             </div>
         </section>
-        </div>
+
+        {/* walk-in shower section */}
+        <section>
+            <h6 className='title'>Walk-in Shower</h6>
+            <p className='summary'>You will be surprised how affordably seniors can get it now:</p>
+            <div className='list-img'>
+            <div className='list-box'>
+                <ul className='list'>
+                    <li>Available in most States</li>
+                    <li>Fair Price</li>
+                    <li>Life time of indepeden living</li>
+                    <li>Shower seated or standing</li>
+                    <li>Multiple safety options</li>
+                    <li>Modern style and comfort</li>
+                </ul>
+            </div>
+            <div className='img-style'>
+                <img src={image} alt="" />
+            </div>
+            </div>
+        </section>
+        </>
     );
 };
 

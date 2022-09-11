@@ -1,3 +1,8 @@
+section{
+    margin: 0;
+    padding: 0;
+}
+/* Home service section */
 .section-neu{
     background: #ECF1F4;
     /* height: 675px; */
@@ -73,7 +78,6 @@
     width: 300px;
     height: 458px;
 }
-
 .project h6{
     width: 390px;
     font-family: 'Poppins';
@@ -106,6 +110,60 @@
     font-size: 15px;
     font-weight: 500;
 }
+
+/* walk-in shower section */
+.title{
+    width: 211px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    margin: auto;
+    height: 71px;
+    display: flex;
+    align-items: center;
+}
+.summary{
+    width: 594px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 45px;
+    color: #000000;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.list-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    margin-bottom: 60px;
+}
+.list-box{
+    width: 400px;
+    height: 280px;
+    background: rgba(217, 217, 217, 0.3);
+    border-radius: 25px;
+    padding: 10px 40px;
+    margin-left: 100px;
+}
+.list{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+}
+.img-style img{
+    width: 400px;
+    margin-right: 100px;
+    height: 280px;
+}
+
 
 /*Smartphones Mobiles Device  responsive */
 @media(min-width: 320px) and (max-width: 480px){
@@ -146,15 +204,42 @@
         width: 80%;
         margin: auto;
     }
+    .stocksna{
+        margin-bottom: 30px;
+    }
     .stocksna img{
         width: 90%;
-        margin-bottom: 10px;
         margin-top: 10px;
+        height: 100%;
     }
     .form-control{
         width: 200px;
     }
+    /* walk-in shower section */
+    .summary{
+        width: 90%;
+        line-height: 30px;
+        margin-bottom: 20px;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+    }
+    .list-img{
+        display: grid;
+        row-gap: 30px;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 20px;
+    }
+    .list-box{
+        width: 330px;
+        margin:auto;
+    }
+    .img-style img{
+        width: 330px;
+        margin: auto;
+    }
 }
+
 /* Mobiles and Tablets Device responsive */
 @media (min-width: 481px) and (max-width: 820px) {
     .dot-logo{
@@ -169,6 +254,7 @@
     }
     
 }
+
 /* ipad Responsive */
 @media (min-width: 768px) and (max-width: 1024px){
     .dot-logo{
@@ -181,10 +267,35 @@
     .stocksna img{
         width: 380px;
     }
+    /* walk-in shower section */
+    .summary{
+        width: 90%;
+        line-height: 30px;
+        margin-bottom: 20px;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+    }
+    .list-img{
+        display: grid;
+        row-gap: 30px;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+    }
+    .list-box{
+        width: 330px;
+        margin:auto;
+        margin-left: 30px;
+    }
+    .img-style img{
+        width: 330px;
+        margin: auto;
+        margin-right: 30px;
+    }
     
 }
 /* ipad */
-@media (min-width: 820px) and (max-width: 1080px){
+@media (min-width: 820px) and (max-width: 1180px){
     .project{
         width: 380px;
         margin-left: 20px;
@@ -201,6 +312,12 @@
     }
     .stocksna img{
         width: 90%;
+    }
+    .list-box{
+        width: 400px;
+    }
+    .img-style img{
+        width: 400px;
     }
 }
 /* surface suo */
@@ -229,7 +346,39 @@
         height: 300px;
         margin-top: 50px;
     }
+    .summary{
+        width: 450px;
+        margin-bottom: 40px;
+        line-height: 25px;
+    }
+    .list-box{
+        width: 250px;
+        margin-left: 20px;
+        height: 250px;
+        padding: 10px 10px;
+    }
+    .list{
+        line-height: 28px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .img-style img{
+        width: 205px;
+        height: 250px;
+        margin-right: 0;
+    }
 }
+@media (min-width:1280px) {
+    .list-box{
+        width: 550px;
+        margin-left: 20px;
+    }
+    .img-style img{
+        width: 550px;
+        margin-right: 20px;
+    }
+}
+/* laptop l */
 @media (min-width:1400px) {
     .project{
         width: 425px;
@@ -251,5 +400,57 @@
         width: 786px;
         height: 458px;
         margin-left: 2px;
+    }
+
+    /* walk-in shower section */
+    .title{
+        width: 211px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 45px;
+        margin: auto;
+        height: 71px;
+        display: flex;
+        align-items: center;
+    }
+    .summary{
+        width: 594px;
+        height: 45px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 45px;
+        color: #000000;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+    .list-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        margin-bottom: 60px;
+    }
+    .list-box{
+        width: 502px;
+        height: 291px;
+        background: rgba(217, 217, 217, 0.3);
+        border-radius: 25px;
+        padding: 10px 40px;
+        margin-left: 204px;
+    }
+    .list{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .img-style img{
+        width: 529px;
+        margin-right: 143px;
     }
 }
